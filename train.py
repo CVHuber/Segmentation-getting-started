@@ -70,7 +70,7 @@ def train():
         # 如果验证指标比最优值更好，那么保存当前模型参数
         if val_loss < best_score:
             best_score = val_loss
-            torch.save(network.state_dict(), "./checkpoint/best.pth")
+            torch.save(network.state_dict(), "./checkpoint.pth")
         # 输出
         print(str(i), "train_loss:", train_loss, "val_dice", val_loss)
 
