@@ -38,4 +38,4 @@ def test(test_dir, weight_path, outputs_dir, img_size=(512, 512)):
 
 
 if __name__ == "__main__":
-    test("./data/test/images", "./checkpoint/best.pth", "./data/test/outputs")
+    test("./data/test/images", "./checkpoint.pth", "./data/test/outputs")
